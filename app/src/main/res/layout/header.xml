@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/bike"
+    android:orientation="vertical">
+    <!-- //TODO add this code to select_bike Activity
+    android:backgroundTintMode="src_over"
+    android:backgroundTint="#80eafbf9-->"
+
+ <android.support.v7.widget.AppCompatImageView
+     android:layout_width="75dp"
+     android:layout_height="75dp"
+     />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/sideNavLoggedInUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user@gmail.com"
+        android:textColor="@color/white"/>
+</LinearLayout>

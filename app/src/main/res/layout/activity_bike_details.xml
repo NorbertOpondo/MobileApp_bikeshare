@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".BikeDetailsActivity">
+
+        <TextView
+            android:id="@+id/bike_details_Page_Header"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="CONFIRM BIKE DETAILS"
+            android:textColorLink="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="52dp" />
+
+        <TextView
+            android:id="@+id/days_diff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="270dp"
+                android:layout_marginTop="20dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/selected_bike_image_view"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bmx" />
+                <!--android:backgroundTintMode="src_over"
+                android:backgroundTint="#80F9F9F9"-->
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"/>
+            <TextView
+                android:id="@+id/bike_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Road Bike"
+                android:textColor="#666666"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gear_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:text="9 x 3 gear"
+                android:textColor="#999999"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/gear_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:text="Ext. switch transmission"
+                android:textSize="18sp"
+                android:textStyle="normal"/>
+
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/dates_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:text="Select Start Date  "
+                android:textSize="20sp"/>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/select_from_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="From"
+                        android:textColor="@color/primaryLight"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BIKE CHARGES ARE KES 40 PER DAY"
+                    android:background="@color/primaryLight"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick the number of days"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/select_days_spinner"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"></Spinner>
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Accessories"
+                android:textColor="@color/primaryLight"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/select_helmet"
+                android:gravity="center_vertical"
+                android:text="Safety Helmet"
+                android:textColor="#999999"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/saftey_helmet" />
+
+            <TextView
+                android:id="@+id/helmet_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/primaryLight"
+                android:gravity="center"
+                android:text="KES.20/="
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/select_pump"
+                android:gravity="center_vertical"
+                android:text="Bicycle pump"
+                android:textColor="#999999"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bike_pump" />
+
+            <TextView
+                android:id="@+id/pump_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/primaryLight"
+                android:gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="FREE"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/select_light"
+                android:gravity="center_vertical"
+                android:text="flash light"
+                android:textColor="#999999"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="right"
+                android:background="@drawable/bike_light" />
+
+            <TextView
+                android:id="@+id/light_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/primaryLight"
+                android:gravity="center"
+                android:text="KES.15/="
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/select_lock"
+                android:gravity="center_vertical"
+                android:text="Bicycle lock"
+                android:textColor="#999999"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="right"
+                android:background="@drawable/bike_lock" />
+
+            <TextView
+                android:id="@+id/lock_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/primaryLight"
+                android:gravity="center"
+                android:text="KES.15/="
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/Next_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:width="200dp"
+            android:background="@color/primaryLight"
+            android:text="NEXT"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

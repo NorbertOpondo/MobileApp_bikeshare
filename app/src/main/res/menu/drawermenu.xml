@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/dashboardGroup" android:checkableBehavior="single">
+        <item
+        android:id="@+id/db"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Dashboard" />
+    </group>
+
+    <group android:id="@+id/bikesGroup" android:checkableBehavior="single">
+        <item
+            android:id="@+id/bikes"
+            android:title="Bikes"
+            android:icon="@drawable/ic_directions_bike_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/myAccountGroup" android:checkableBehavior="single">
+    <item
+        android:id="@+id/my_account"
+        android:title="My Account"
+        android:icon="@drawable/ic_account_circle_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/contactGroup" android:checkableBehavior="single">
+    <item
+        android:id="@+id/contact"
+        android:title="Contact"
+        android:icon="@drawable/ic_mail_outline_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/logoutGroup" android:checkableBehavior="single">
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"/>
+    </group>
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26A69A</color>
+    <color name="colorPrimaryDark"></color>
+    <color name="colorAccent">#0a0b0b</color>
+    <color name="white">#ffffff </color>
+    <color name="dashboard_header"> #ffffff</color>
+    <color name="LocationTextColor"> #bfbfbf</color>
+    <color name="pink">#ff6699</color>
+    <color name="tomato">#FF7961</color>
+    <color name="primaryLight">#59d9cc</color>
+    <color name="black"> #000000</color>
+    <color name="green">#009933</color>
+</resources>

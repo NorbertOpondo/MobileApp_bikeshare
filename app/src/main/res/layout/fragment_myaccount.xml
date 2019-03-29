@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Myaccount">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USER PROFILE"
+            android:textSize="24dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/ic_person_pin_black_24dp"
+            android:drawableLeft="@drawable/ic_person_pin_black_24dp"
+
+            />
+        <TextView
+            android:id="@+id/user_id_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CIT-222-029/2015"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/bike_id_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMX001"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:id="@+id/due_date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-3-21"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>
